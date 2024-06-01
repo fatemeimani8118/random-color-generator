@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <title>random color generator</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h3 class="title">Random Color Generator</h3>
+        <button onclick="randcolor()" id="btn">generate</button>
+      </div>
+    </main>
+    <script>
+      const btn = document.querySelector("button");
+      const randcolor = () => {
+        document.getElementsByTagName("main")[0].style.background = "rgb(" + mycolor() + "," + mycolor() + "," + mycolor() + ")";
+        document.getElementsByTagName("h3")[0].innerHTML = "rgb (" + mycolor() + " , " + mycolor() + " , " + mycolor() + ")";
+      };
+      function mycolor() {
+        return Math.floor(Math.random() * 256);
+      }
+    </script>
+  </body>
+</html>

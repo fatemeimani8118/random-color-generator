@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+main > div {
+  top: 50%;
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+main > div > h3 {
+  color: azure;
+  margin: 20px;
+  font-size: 40px;
+}
+main > div > #btn {
+  width: 20%;
+  height: 50px;
+  font-size: 23px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  box-shadow: inset 0px 2px 2px 0 rgba(0, 0, 0, 0.308), 0 6px 6px 2px rgba(0, 0, 0, 0.527);
+}
+main > div > #btn:hover {
+  background-color: antiquewhite;
+}/*# sourceMappingURL=master.css.map */
