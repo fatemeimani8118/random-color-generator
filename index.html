@@ -16,12 +16,17 @@
     <script>
       const btn = document.querySelector("button");
       const randcolor = () => {
-        document.getElementsByTagName("main")[0].style.background = "rgb(" + mycolor() + "," + mycolor() + "," + mycolor() + ")";
-        document.getElementsByTagName("h3")[0].innerHTML = "rgb (" + mycolor() + " , " + mycolor() + " , " + mycolor() + ")";
+        let r = mycolor();
+        let g = mycolor();
+        let b = mycolor();
+
+        document.getElementsByTagName("main")[0].style.background = "rgb(" + r + "," + g + "," + b + ")";
+        document.getElementsByTagName("h3")[0].innerHTML = "rgb (" + r + " , " + g + " , " + b + ")";
       };
       function mycolor() {
         return Math.floor(Math.random() * 256);
       }
+    </script>
     </script>
   </body>
 </html>
